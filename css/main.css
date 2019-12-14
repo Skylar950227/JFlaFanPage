@@ -1,0 +1,24 @@
+*{
+  text-decoration: none;
+  list-style: none;
+}
+header{
+
+  border: solid 1px black;
+}
+.mainmenu {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+.mainmenu ul{
+  display: flex;
+}
+.mainmenu ul li{
+  width: 100%;
+  margin-right: 20px;
+}
+section{
+  width: 100%;
+  height: 100%;
+}
