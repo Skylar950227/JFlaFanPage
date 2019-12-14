@@ -1,24 +1,161 @@
-*{
+* {
   text-decoration: none;
   list-style: none;
 }
-header{
 
-  border: solid 1px black;
+header {
+  width: 100%;
 }
-.mainmenu {
+
+body {
+  background-color: #222;
+  font-family: sans-serif;
+}
+
+.nav {
   position: fixed;
-  width: 100%;
-  text-align: center;
-}
-.mainmenu ul{
+  height: 600px;
+  overflow: hidden;
+  top: -250px;
   display: flex;
-}
-.mainmenu ul li{
+  align-items: center;
   width: 100%;
-  margin-right: 20px;
+  z-index: 1;
 }
-section{
+
+.menubar {
+  width: 690px;
+  height: 300px;
+  margin-top: 300px;
+  position: absolute;
+  left: 49%;
+  transform: translate(-50%, -50%);
+}
+
+.jfla {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  margin: -25px 0 0 -50px;
+}
+
+.jfla a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.mainmenu1 {
+  position: absolute;
+}
+
+.mainmenu2 {
+  position: absolute;
+  margin-left: 10px;
+  right: 0px;
+}
+
+.mainmenu1 a, .mainmenu2 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  font-size: 30px;
+}
+
+.btn {
+  display: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.btn span {
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .menubar {
+    overflow: visible;
+    z-index: 1;
+  }
+
+  .mainmenu1 {
+    width: 100%;
+    right: 0;
+    top: 50px;
+    background: transform;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .mainmenu1 a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .mainmenu2 {
+    width: 100%;
+    right: 0;
+    top: 172px;
+    background: #transform;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .mainmenu2 a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .btn {
+    display: block;
+    cursor: pointer;
+    left: 2%;
+  }
+
+  .show {
+    max-height: 500px;
+  }
+}
+
+.s1 {
+  position: absolute;
   width: 100%;
   height: 100%;
+  margin: -8px -8px -10px -8px;
+  color: #fff;
+  text-align: center;
+}
+.maindiv {
+  position: relative;
+  max-width: 600px;
+  height: 100%;
+  left:50%;
+  transform:translate(-50%);
+}
+.content{
+  position: absolute;
+  top: 120px;;
+}
+
+.mainimg {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content1 {
+  width: 100%;
 }

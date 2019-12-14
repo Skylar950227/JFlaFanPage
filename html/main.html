@@ -3,22 +3,45 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="C:\Users\유완규\Desktop\JFlaFanPage\css\main.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
   <header>
-    <div class="mainmenu">
-      <ul>
-        <li class="m1">ABOUT</li>
-        <li class="m2">MUSIC</li>
-        <li class="m3">J.Fla</li>
-        <li class="m4">VIDEO</li>
-        <li class="m5">PICTURE</li>
-      </ul>
-    </div>
+    <nav class="nav">
+      <a class="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="menubar">
+        <div class="jfla">
+          <a href="#">J Fla</a>
+        </div>
+        <div class="mainmenu1">
+          <a href="#">ABOUT</a>
+          <a href="#">MUSIC</a>
+        </div>
+        <div class="mainmenu2">
+          <a href="#">VIDEO</a>
+          <a href="#">PICTURE</a>
+        </div>
+      </div>
+    </nav>
   </header>
   <section class="s1">
-    J.Fla
+    <div class="maindiv">
+      <div class="content">
+        <img class="mainimg" src="C:\Users\유완규\Desktop\JFlaFanPage\images\main1.jpg" alt="JflaMain">
+        <p class="content1"></p>
+      </div>
+    </div>
   </section>
+  <script>
+    $(".btn").on("click", function() {
+      $('.mainmenu1').toggleClass("show")
+      $('.mainmenu2').toggleClass("show")
+    });
+  </script>
 </body>
 </html>
