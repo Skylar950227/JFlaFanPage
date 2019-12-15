@@ -14,9 +14,9 @@ body {
 
 .nav {
   position: fixed;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
-  top: -250px;
+  top: -370px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -24,7 +24,7 @@ body {
 }
 
 .menubar {
-  width: 690px;
+  width: 900px;
   height: 300px;
   margin-top: 300px;
   position: absolute;
@@ -34,7 +34,7 @@ body {
 
 .jfla {
   position: absolute;
-  left: 50%;
+  left: 48%;
   width: 200px;
   height: 100px;
   margin: -25px 0 0 -50px;
@@ -44,7 +44,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .mainmenu1 {
@@ -63,13 +63,14 @@ body {
   font-weight: 700;
   margin-left: 20px;
   transition: color 0.3s;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .btn {
   display: none;
   position: absolute;
   z-index: 2;
+  top:400px;
 }
 
 .btn span {
@@ -80,7 +81,7 @@ body {
   background: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .menubar {
     overflow: visible;
     z-index: 1;
@@ -89,8 +90,8 @@ body {
   .mainmenu1 {
     width: 100%;
     right: 0;
-    top: 50px;
-    background: transform;
+    top: 70px;
+    background: #222222b8;
     overflow: hidden;
     max-height: 0;
   }
@@ -105,8 +106,8 @@ body {
   .mainmenu2 {
     width: 100%;
     right: 0;
-    top: 172px;
-    background: #transform;
+    top: 218px;
+    background: #222222b8;
     overflow: hidden;
     max-height: 0;
   }
@@ -125,7 +126,7 @@ body {
   }
 
   .show {
-    max-height: 500px;
+    max-height: 800px;
   }
 }
 
@@ -149,13 +150,73 @@ body {
   top: 120px;;
 }
 
+
+.album h1{
+  font-size: 70px;
+  padding-bottom: 20px;
+  border-bottom: solid 5px #fff;
+}
 .mainimg {
   position: relative;
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
+}
+.imgbox{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  max-height: 600px;
+  background-color: #222;
+  cursor: pointer;
+  position: relative;
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #3c3b3bd9;
+  opacity: 0;
+  transition: 0.4s all;
+}
+.imgbox:hover > .box{
+  opacity: 1;
+}
+.boxde{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.boxde h2{
+  font-size: 50px;
+}
+
+.btnbar{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #222;
+  bottom: 0px;
+}
+.linkbtn{
+  position: absolute;;
+  bottom: -8px;;
+  right: 20px;
+}
+.icons{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
 }
 
 .content1 {
   width: 100%;
+}
+p{
+  font-size: 21px;
+  line-height: 35px;
+  font-family: 'Sunflower', sans-serif;
 }
