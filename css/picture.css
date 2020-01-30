@@ -32,12 +32,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.menubg{
-    width: 900px;
-    height: 100px;
-    background: #222222b8;
-}
-
 .jfla {
   position: absolute;
   left: 48%;
@@ -149,7 +143,7 @@ body {
   max-width: 600px;
   height: 100%;
   left:50%;
-  transform:translate(-50%);
+  transform:translate(-60%);
 }
 .content{
   position: absolute;
@@ -162,67 +156,22 @@ body {
   padding-bottom: 20px;
   border-bottom: solid 5px #fff;
 }
-.mainimg {
-  position: relative;
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-  cursor: pointer;
-}
-.imgbox{
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  max-height: 600px;
-  background-color: #222;
-  cursor: pointer;
-  position: relative;
-}
-.box{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  background: #3c3b3bd9;
-  opacity: 0;
-  transition: 0.4s all;
-}
-.imgbox:hover > .box{
-  opacity: 1;
-}
-.boxde{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.boxde h2{
-  font-size: 50px;
-}
 
-.btnbar{
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  background-color: #222;
-  bottom: 0px;
-}
-.linkbtn{
-  position: absolute;;
-  bottom: -8px;;
-  right: 20px;
-}
-.icons{
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-}
-
-.content1 {
-  width: 100%;
-}
 p{
   font-size: 21px;
   line-height: 35px;
   font-family: 'Sunflower', sans-serif;
+}
+
+#instagram{
+  max-width: 720px;
+}
+#instagram img{
+  max-width: 720px;
+}
+
+.picbox{
+  width: 720px;
+  height: 480px;
+  border: 2px solid #fff;
 }

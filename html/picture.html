@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="https://skylar950227.github.io/JFlaFanPage/css/main.css">
-  <!-- <link rel="stylesheet" href="C:\Users\유완규\Desktop\JFlaFanPage\css\video.css"> -->
+  <!-- <link rel="stylesheet" href="https://skylar950227.github.io/JFlaFanPage/css/main.css"> -->
+  <link rel="stylesheet" href="C:\Users\유완규\Desktop\JFlaFanPage\css\picture.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Sunflower:300&display=swap" rel="stylesheet">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
@@ -19,9 +19,11 @@
         <span></span>
       </a>
       <div class="menubar">
+        <div class="menubg">
         <div class="jfla">
           <a href="https://skylar950227.github.io/JFlaFanPage/html/main.html">J Fla</a>
         </div>
+      </div>
         <div class="mainmenu1">
           <a href="https://skylar950227.github.io/JFlaFanPage/html/about.html">ABOUT</a>
           <a href="https://skylar950227.github.io/JFlaFanPage/html/music.html">MUSIC</a>
@@ -37,63 +39,15 @@
     <div class="maindiv">
       <div class="content">
         <div class="album">
-          <h1>YOUTUBE</h1>
+          <h1>INSTAGRAM</h1>
         </div>
-        <div class="picbox">
-          <img>
+        <div id="instagram">
         </div>
-        <div class="space">
-          <p><br></p>
-        </div>
-        <div class="picbox">
-
-        </div>
-        <div class="space">
-          <p><br></p>
-        </div>
-        <div class="picbox">
-
-        </div>
-        <!-- <img class="mainimg" src="C:\Users\유완규\Desktop\JFlaFanPage\images\Belicever.png" alt="BELIEVER">
-        <img class="mainimg" src="C:\Users\유완규\Desktop\JFlaFanPage\images\Natural.png" alt="NATURAL"> -->
-        <!-- <p class="content1">J.Fla는 대한민국 국적의 싱어송라이터이자 유튜브 뮤직 크리에이터이다.
-          <br>본명은 김정화이고 1987년 6월 10일 생이다.
-          <br>예명인 J.Fla의 유래는 이름에서 따왔다.
-          <br>'J'는 '정'이며 'Fla'는 화(花 = Flower)이다.
-          <br>J.Fla는 팝송들을 커버하며 인지도를 키워갔으며
-          <br>Ed Sheeran의 'Shape of You'를 통해 폭발적인 성장을 하였다.
-          <br>한국 개인 유튜버로는 최초로 1000만 구독자를 달성하였다.
-          <br>2019년 12월 12일 기준으로 1400만명의 구독자를 보유하였다.
-        </p> -->
       </div>
     </div>
   </section>
-  <script>
-    $(".btn").on("click", function() {
-      $('.mainmenu1').toggleClass("show")
-      $('.mainmenu2').toggleClass("show")
-    });
-  </script>
-  <script>
-    const wrapper = document.getElementById("instagram");
-    fetch("https://www.instagram.com/jfla/")
-      .then(a => {
-        return a.text();
-      }).then(a => {
-        const media = JSON.parse(a.slice(a.indexOf("edge_owner_to_timeline_media") + 30, a.indexOf("edge_saved_media") - 2));
-        media.edges.forEach(m => {
-          const node = m.node,
-            a = document.createElement("a"),
-            img = document.createElement("img");
-
-          a.target = "_blank",
-            a.href = `https://www.instagram.com/p/${node.shortcode}/`,
-            img.src = node.display_url,
-            a.append(img),
-            wrapper.append(a)
-        })
-      })
-  </script>
+  <script type="text/javascript" src="C:\Users\유완규\Desktop\JFlaFanPage\js\main.js"></script>
+  <script type="text/javascript" src="C:\Users\유완규\Desktop\JFlaFanPage\js\insta.js"></script>
 </body>
 
 </html>
